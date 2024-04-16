@@ -14,6 +14,16 @@ body {
   color: var(--text-darkgray); /* Assuming --text-black is defined in your theme */
 }
 
+.container h1,
+.container h2 {
+  position: relative; /* Posicionamiento relativo */
+  z-index: 10; /* Z-index alto */
+}
+
+.container {
+  z-index: 0; /* Z-index bajo */
+}
+
 /* Encabezados */
 h1, h2, h3, h4, h5, h6 {
   color: 'sprinklerblue';  /* Assuming --text-heading is defined in your theme */
