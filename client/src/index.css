@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Berlin Sans FB";
+  src: url('/fonts/BRLNSR.woff') format('woff'),
+       url('/fonts/BRLNSB.woff') format('woff');
+}
+
+/* Estilos base */
+body {
+  font-family: 'Karla', sans-serif;
+  color: var(--text-darkgray); /* Assuming --text-black is defined in your theme */
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+  color: 'sprinklerblue';  /* Assuming --text-heading is defined in your theme */
+  font-family: 'Berlin Sans FB';
+}
+
+/* Párrafos */
+p {
+  font-size: 1rem;
+  color: 'darkgray';
+}
+
+.dark p {
+  font-size: 1rem;
+  color: 'sprinklergreenyellow';
+}
+
+.footer p{
+  color: 'sprinklerblue',
+}
+
+.dark .footer p{
+  color: 'sprinklergreenyellow',
+}
+
+/* Rich Text Editor (Optional) */
+.ql-editor {
+  font-size: 1.05rem;
+}
+
+/* Posts */
+.post-content h1 {
+  font-size: 2.5rem;  /* Adjust as needed */
+  font-weight: 800;
+  font-family: 'berlin', sans-serif;
+  margin: 1.8rem 0;
+}
+
+.post-content h2 {
+  font-size: 2rem;  /* Adjust as needed */
+  font-weight: 'semibold';
+  font-family: 'berlin', sans-serif;
+  margin: 1.6rem 0;
+}
+
+.post-content h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: 'berlin', sans-serif;
+  margin: 1.4rem 0;
+}
+
+.post-content h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'berlin', sans-serif;
+  margin: 1.4rem 0;
+}
+
+.post-content p {
+  margin-bottom: 0.5rem;
+}
+
+/* Code Blocks */
+code,
+pre {
+  font-family: 'M PLUS 1 Code', monospace;
+}
+
+/* Enlaces */
+a {
+  color: var(--link-color);  /* Assuming --link-color is defined in your theme */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Componentes reutilizables (@layer) */
+@layer components {
+  .text-sprinklermint {
+    color: var(--text-sprinklermint); /* Assuming --text-sprinklermint is defined */
+  }
+
+  .link {
+    @apply font-semibold text-xs sm:text-sm text-sprinklermint hover:text-sprinklerpink;
+  }
+
+  .dark .link {
+    @apply text-sprinklerpink hover:text-sprinklermint;
+  }
+
+  .navbarlink {
+    @apply text-sprinklerblue hover:text-sprinklerpink text-base;
+  }
+
+  .btn-primary {
+    @apply py-2 px-5 bg-none hover:bg-none text-sprinklerpink outline-sprinklerpink hover:outline-sprinklermint font-semibold rounded-full shadow-md focus:outline-none ring-sprinklerpink focus:ring focus:ring-sprinklerpink focus:ring-opacity-75;
+  }
+
+  .footer-link {
+    @apply text-sm text-sprinklerpink hover:text-sprinklerblue;
+  }
+
+  .socialicon {
+    @apply text-sprinklermint hover:text-sprinklerpink md:text-md;
+  }
+  .dark .socialicon {
+    @apply text-sprinklerpink hover:text-sprinklermint;
+  }
+}
