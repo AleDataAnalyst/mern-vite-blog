@@ -9,9 +9,12 @@
 }
 
 /* Estilos base */
+html,
 body {
-  font-family: 'Karla', sans-serif;
-  color: var(--text-darkgray); /* Assuming --text-black is defined in your theme */
+  margin: 0;
+  padding: 0;
+  background: #e5e5e5;
+  font-family: "Sora", sans-serif;
 }
 
 .container h1,
