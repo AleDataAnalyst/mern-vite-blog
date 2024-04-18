@@ -81,7 +81,7 @@ export default function SignUp() {
               />
             </div>
             <Button
-              className='border border-2 border-solid border-sprinklerpink text-sprinklerpink hover:bg-sprinklerpink hover:text-sprinklergreenyellow focus:outline-none focus:ring focus:ring-sprinklerpink focus:ring-opacity-75'
+              className='border-2 border-solid border-sprinklerpink text-sprinklerpink hover:bg-sprinklerpink hover:text-sprinklergreenyellow focus:outline-none focus:ring focus:ring-sprinklerpink focus:ring-opacity-75'
               type='submit'
               disabled={loading}
             >

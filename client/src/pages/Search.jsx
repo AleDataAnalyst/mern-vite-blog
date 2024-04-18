@@ -106,10 +106,10 @@ export default function Search() {
         <form className='flex flex-col gap-8' onSubmit={handleSubmit}>
           <div className='flex   items-center gap-2'>
             <label className='whitespace-nowrap font-semibold'>
-              Search Term:
+              Término de búsqueda:
             </label>
             <TextInput
-              placeholder='Search...'
+              placeholder='Buscar...'
               id='searchTerm'
               type='text'
               value={sidebarData.searchTerm}
@@ -117,39 +117,39 @@ export default function Search() {
             />
           </div>
           <div className='flex items-center gap-2'>
-            <label className='font-semibold'>Sort:</label>
+            <label className='font-semibold'>Ordenar:</label>
             <Select onChange={handleChange} value={sidebarData.sort} id='sort'>
-              <option value='desc'>Latest</option>
-              <option value='asc'>Oldest</option>
+              <option value='desc'>Más reciente</option>
+              <option value='asc'>Mas antiguo</option>
             </Select>
           </div>
           <div className='flex items-center gap-2'>
-            <label className='font-semibold'>Category:</label>
+            <label className='font-semibold'>Categoría:</label>
             <Select
               onChange={handleChange}
               value={sidebarData.category}
               id='category'
             >
-              <option value='uncategorized'>Uncategorized</option>
+              <option value='uncategorized'>Sin categorizar</option>
               <option value='reactjs'>React.js</option>
               <option value='nextjs'>Next.js</option>
               <option value='javascript'>JavaScript</option>
             </Select>
           </div>
-          <Button type='submit' outline className='border border-2 border-solid border-sprinklerpink text-sprinklerpink hover:bg-sprinklerpink hover:text-sprinklergreenyellow focus:outline-none focus:ring focus:ring-sprinklerpink focus:ring-opacity-75'>
-            Apply Filters
+          <Button type='submit' outline className='border-2 border-solid border-sprinklerpink text-sprinklerpink hover:bg-sprinklerpink hover:text-sprinklergreenyellow focus:outline-none focus:ring focus:ring-sprinklerpink focus:ring-opacity-75'>
+            Aplicar Filtros
           </Button>
         </form>
       </div>
       <div className='w-full'>
         <h1 className='text-3xl font-semibold sm:border-b border-gray-500 p-3 mt-5 '>
-          Posts results:
+          Resultados de publicaciones:
         </h1>
         <div className='p-7 flex flex-wrap gap-4'>
           {!loading && posts.length === 0 && (
-            <p className='text-xl text-darkgray'>No posts found.</p>
+            <p className='text-xl text-darkgray'>No se encontraron publicaciones.</p>
           )}
-          {loading && <p className='text-xl text-darkgray'>Loading...</p>}
+          {loading && <p className='text-xl text-darkgray'>Cargando...</p>}
           {!loading &&
             posts &&
             posts.map((post) => <PostCard key={post._id} post={post} />)}
@@ -158,7 +158,7 @@ export default function Search() {
               onClick={handleShowMore}
               className='text-sprinklergreenyellow text-lg hover:underline p-7 w-full'
             >
-              Show More
+              Mostrar Más
             </button>
           )}
         </div>

@@ -143,7 +143,7 @@ export default function UpdatePost() {
           />
           <Button
             type='button'
-            className='border border-2 border-solid border-sprinklerpink text-sprinklerpink hover:bg-sprinklerpink hover:text-sprinklergreenyellow focus:outline-none focus:ring focus:ring-sprinklerpink focus:ring-opacity-75'
+            className='border-2 border-solid border-sprinklerpink text-sprinklerpink hover:bg-sprinklerpink hover:text-sprinklergreenyellow focus:outline-none focus:ring focus:ring-sprinklerpink focus:ring-opacity-75'
             size='sm'
             outline
             onClick={handleUpdloadImage}
@@ -179,7 +179,7 @@ export default function UpdatePost() {
             setFormData({ ...formData, content: value });
           }}
         />
-        <Button type='submit' className='border border-2 border-solid border-sprinklerpink text-sprinklerpink hover:bg-sprinklerpink hover:text-sprinklergreenyellow focus:outline-none focus:ring focus:ring-sprinklerpink focus:ring-opacity-75'>
+        <Button type='submit' className='border-2 border-solid border-sprinklerpink text-sprinklerpink hover:bg-sprinklerpink hover:text-sprinklergreenyellow focus:outline-none focus:ring focus:ring-sprinklerpink focus:ring-opacity-75'>
           Actualizar publicación
         </Button>
         {publishError && (

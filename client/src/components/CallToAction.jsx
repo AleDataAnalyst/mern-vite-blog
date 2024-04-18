@@ -10,7 +10,7 @@ export default function CallToAction() {
             <p className='text-black1 my-2'>
                 Mira estos consejos para hacer networking en el sector tecnológico.
             </p>
-            <Button className='border border-2 border-solid border-sprinklerpink text-sprinklerpink hover:bg-sprinklerpink hover:text-sprinklergreenyellow focus:outline-none focus:ring focus:ring-sprinklerpink focus:ring-opacity-75' className='rounded-tl-xl rounded-bl-none'>
+            <Button className='border-2 border-solid border-sprinklerpink text-sprinklerpink hover:bg-sprinklerpink hover:text-sprinklergreenyellow focus:outline-none focus:ring focus:ring-sprinklerpink focus:ring-opacity-75 rounded-tl-xl rounded-bl-none' >
                 <a href="#" target='_blank' rel='noopener noreferrer'>
                     Networking para encontrar empleo
                 </a>
